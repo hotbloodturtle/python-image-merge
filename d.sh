@@ -1,3 +1,3 @@
 #!/bin/bash
 
-rm -r ../photo/merge
+rm -r ../photo/merged
