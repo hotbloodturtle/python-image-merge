@@ -76,6 +76,8 @@ for i in range(min_len):
         ani_image = same_scale_resize_height(GIF_HEIGHT, ani_image)
 
         char_frames = iter_frames(char_image)
+        if not 'duration' in char_image.info:
+            continue
         duration = char_image.info['duration']
 
         merged_images = []
